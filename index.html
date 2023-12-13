@@ -5,63 +5,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/uikit.min.css" />
+  <link rel="icon" href="assets/img/favicon-l.svg" id="favicon-l" />
+  <link rel="icon" href="assets/img/favicon-d.svg" id="favicon-d" />
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
-  <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon" />
+  <script src="js/favicon.js"></script>
   <title>Kujaku Art - Essential Beautiful Art</title>
 </head>
 
 <body>
-  <!-- Top section start -->
-  <div class="uk-position-relative">
-    <img src="assets/img/bg.png" alt="" />
-    <div class="uk-position-top">
-      <!-- Navbar start -->
-      <nav uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
-        class="uk-navbar-container uk-dark">
-        <div class="uk-container">
-          <div uk-navbar>
-            <div class="uk-navbar-left">
-              <ul class="uk-navbar-nav">
-                <li>
-                  <a href="index.html"><img src="assets/img/logo-text.png" alt="Kujaku Logo" height="20"
-                      width="100" /></a>
-                </li>
-                <li class="uk-active">
-                  <a href="#">
-                    <span class="uk-icon uk-margin-small-right uk-visible@m" uk-icon="icon: heart"></span>
-                    Services</a>
-                  <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                      <li class="uk-active">
-                        <a href="#">Graphic design</a>
-                      </li>
-                      <li class="uk-active"><a href="#">Web design</a></li>
-                      <li><a href="#">Coming soon</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="#">
-                    <span class="uk-icon uk-margin-small-right uk-visible@m" uk-icon="icon: plus"></span>
-                    Advantages</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="uk-navbar-right">
-              <ul class="uk-navbar-nav">
-                <li>
-                  <a href="#"><span class="uk-icon uk-margin-small-right uk-visible@m"
-                      uk-icon="icon: user"></span>Contacts</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <!-- Navbar start -->
+  <nav uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-navbar-container">
+    <div class="uk-container">
+      <div uk-navbar>
+        <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="index.html"><img src="assets/img/logo-text.png" alt="Kujaku Logo" height="20" width="100" /></a>
+            </li>
+            <li class="uk-active">
+              <a href="#">
+                <span class="uk-icon uk-margin-small-right uk-visible@m" uk-icon="icon: heart"></span>
+                Services<span uk-navbar-parent-icon></span></a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-active">
+                    <a href="#">Graphic Design</a>
+                  </li>
+                  <li class="uk-active"><a href="#">Web Design</a></li>
+                  <li><a href="#">Coming Soon</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <span class="uk-icon uk-margin-small-right uk-visible@m" uk-icon="icon: plus"></span>
+                Advantages</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- Navbar end -->
+
+        <div class="uk-navbar-right uk-visible@m">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="#"><span class="uk-icon uk-margin-small-right uk-visible@m"
+                  uk-icon="icon: user"></span>Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Top section start -->
+  <div class="uk-img uk-align-center" style="margin-top: 0px">
+    <img src="assets/img/bg.png" alt="" />
   </div>
   <!-- Top section end -->
 
@@ -96,7 +95,7 @@
         <div class="uk-card uk-card-default uk-card-body">
           <div uk-icon="icon: image; ratio: 2"></div>
           <p class="uk-text-meta">
-            Hi-Res art provided for serving our best quality of our creation.
+            Hi-res art provided for serving our best quality of our creation.
           </p>
         </div>
       </div>
@@ -133,13 +132,25 @@
   <!-- Gallery section end -->
 
   <!-- Contact section started -->
-  <div></div>
+  <div class="uk-padding">
+    <div class="uk-text-lead uk-text-center uk-h3">Do you interested?</div>
+    <p class="uk-text-center">If you interested, you can contact our below</p>
+    <div class="uk-flex uk-flex-center">
+      <div class="uk-card uk-card-default uk-card-body">Item 1</div>
+      <div class="uk-card uk-card-default uk-card-body uk-margin-left">
+        Item 2
+      </div>
+      <div class="uk-card uk-card-default uk-card-body uk-margin-left">
+        Item 3
+      </div>
+    </div>
+  </div>
   <!-- Contact section end -->
 
   <!-- Footer section started -->
-  <footer class="uk-section uk-background-secondary">
+  <footer class="uk-section-small uk-section-secondary">
     <div class="uk-container">
-      <h3>Section</h3>
+      <h4>Kujaku Art - Essential Beauty Art</h4>
       <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
         <div>
           <p>
@@ -160,6 +171,9 @@
           </p>
         </div>
       </div>
+    </div>
+    <div class="uk-align-center">
+      <p class="uk-text-bottom uk-text-center">Created by full of love</p>
     </div>
   </footer>
   <!-- Footer section end -->
